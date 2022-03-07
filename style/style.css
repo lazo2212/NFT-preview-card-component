@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  padding: 1.25rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-weight: 300;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.container .main {
+  position: relative;
+}
+
+.container .main-image {
+  border-radius: 0.5rem;
+}
+
+.container .hover-image {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 5px);
+  opacity: 0;
+}
+
+.container .hover-image:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.container .hover-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.container h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container ul {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container ul :first-child {
+  color: hsl(178, 100%, 50%);
+}
+
+.container ul img {
+  margin-right: 0.5rem;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+.container .avatar img {
+  width: 4rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.container .avatar span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container .avatar span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 375px;
+    margin: 0 auto 1rem;
+  }
+}
